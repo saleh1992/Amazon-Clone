@@ -1,0 +1,149 @@
+.header {
+  z-index: 100;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+}
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 18px 20px 0;
+}
+
+.header_search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+.header_search_sm {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  display: none;
+}
+
+.header_searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px 0 0 4px;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 30px !important;
+  background-color: #cd9842;
+  border-radius: 0 4px 4px 0;
+  width: 1.5em !important;
+  cursor: pointer;
+}
+.header__optionLineOne {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header__optionBasket a,
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+.header_logo__container {
+  overflow: hidden;
+}
+.user__icon {
+  display: none !important;
+}
+
+* {
+  /* outline: 1px solid red; */
+}
+/* ---------------------Media Query Small screen --------------- */
+
+@media (max-width: 678px) {
+  .header__nav > .header__option {
+    display: none;
+  }
+  .header_search {
+    display: none;
+  }
+  .header_search_sm {
+    display: flex;
+    padding: 0 20px 20px 20px;
+    background-color: #131921;
+    margin-top: -1px;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .header__nav {
+    margin: 0 20px;
+  }
+  .header_searchInput {
+    padding: 24px;
+  }
+  .header__searchIcon {
+    height: 2em !important;
+  }
+  .header__nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user__icon {
+    display: initial !important;
+  }
+  .header__option.one {
+    flex-direction: row;
+    align-items: center;
+  }
+  .header__optionLineOne {
+    width: 83px;
+  }
+  .header__option.one .header__optionLineTwo {
+    display: none;
+  }
+  .nav-container >a {
+    display: none;
+  }
+  .nav-container a, .nav a{
+    padding: 0 2px;
+    font-size: 11px;
+  }
+  .header_logo{
+    width: 78px;
+  }
+  .nav > a:last-child{
+    display: none;
+  }
+}
+/* ---------------------Media Query Medium screen --------------- */
+
+@media (min-width: 651px) and (max-width: 950px) {
+}

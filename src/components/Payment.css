@@ -1,0 +1,108 @@
+.payment {
+  background-color: white;
+}
+
+.payment__container > h1 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  background-color: rgb(234, 237, 237);
+  border-bottom: 1px solid lightgray;
+}
+
+.payment__container > h1 a {
+  text-decoration: none;
+}
+
+.payment__section {
+  display: flex;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
+  gap: 1.5rem;
+}
+
+.payment__title {
+  flex: 0.2;
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+  flex: 0.8;
+}
+
+.payment__details > form {
+  max-width: 400px;
+}
+
+.payment__details > h3 {
+  padding-bottom: 20px;
+}
+
+.payment__details > form > div > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  font-weight: bolder;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+.payment__section .visa__card {
+  position: relative;
+  display: flex;
+}
+.payment__section .visa__card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.payment__section .back__card,
+.payment__section .front__card {
+  width: 250px;
+  height: -webkit-fill-available;
+  transition: all 0.5s ease-in-out;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.front__card {
+  z-index: 1;
+}
+
+.payment__section .visa__card:hover .front__card {
+  transform: rotateY(90deg);
+}
+.back__card {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transform: rotateY(90deg);
+  transition-delay: 0.5s !important;
+}
+.payment__section .visa__card:hover .back__card {
+  transform: rotateY(0deg);
+}
+
+/* ---------------------Media Query Small screen --------------- */
+
+@media (max-width: 650px) {
+  .payment__section {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .payment__address,
+  .payment__items,
+  .payment__details {
+    margin-bottom: 20px;
+  }
+}

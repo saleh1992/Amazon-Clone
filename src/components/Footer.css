@@ -1,0 +1,119 @@
+footer {
+  color: #ffffff;
+  text-align: center;
+}
+footer .back__home {
+  background-color: #37475a;
+  cursor: pointer;
+}
+footer .back__home:hover {
+  background-color: #77899e;
+}
+footer .back__home a {
+  color: #ffffff;
+  display: block;
+  padding: 13px;
+}
+footer .footer__links {
+  display: flex;
+  justify-content: center;
+  background-color: #232f3e;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer__col {
+  margin: 0 30px;
+  text-align: left;
+}
+.footer__col ul {
+  padding: 0;
+  color: inherit;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.footer__col ul a {
+  color: inherit;
+  margin: 7px 0;
+  display: block;
+}
+.footer__col ul a:hover {
+  text-decoration: underline;
+}
+.footer__head {
+  font-size: 19px;
+  font-weight: 700;
+}
+.footer__final__links {
+  display: flex;
+  justify-content: center;
+  background-color: #232f3e;
+  gap: 56px;
+  padding: 31px;
+  border-top: 1px solid #8080805c;
+}
+.footer__logo {
+  width: 76px;
+  display: flex;
+  align-items: flex-end;
+}
+.footer__logo img {
+  width: 100%;
+}
+.footer__row__links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.footer__row__links > div {
+  border: 1px solid grey;
+  padding: 8px 30px;
+  border-radius: 4px;
+  display: flex;
+  cursor: pointer;
+  height: 40px;
+  align-items: center;
+}
+.footer__language {
+}
+.footer__currency {
+}
+.footer__country {
+}
+.footer__country img {
+  width: 18px;
+  height: 12px;
+  margin-right: 12px;
+}
+.footer__icon{
+  margin-right: 12px;
+}
+
+/* ---------------------Media Query Small screen --------------- */
+
+@media (max-width: 650px) {
+  footer .footer__links {
+    flex-direction: column;
+  }
+  .footer__head {
+    margin-top: 25px;
+  }
+  .footer__row__links,
+  .footer__final__links{
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer__logo {
+    width: 100%;
+    justify-content: center;
+}
+.footer__logo img {
+  width: 50%;
+}
+}
+/* ---------------------Media Query Medium screen --------------- */
+
+@media (min-width: 651px) and (max-width: 950px) {
+  .footer__col {
+    margin: 0 8px;
+  }
+}
